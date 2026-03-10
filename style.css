@@ -1,0 +1,784 @@
+body {
+    background-color: white;
+    background-position: center;
+    background-image: url(bg.gif);
+    background-repeat: no-repeat;
+    background-size: 500px 800px;
+                       /*x,y*/
+}
+
+#The-Game{
+width:100vw;
+height: 100vh;
+position:relative;
+overflow: hidden;
+}
+
+#button{
+   position: absolute; 
+   left: 33%;
+   bottom: 60%;
+   height: 70px;
+   width: 150px;
+   border-radius: 40px;
+   border: solid;
+   background-color: darkcyan;
+   font-size: 23px;
+   color: white;
+   border-color: black;
+   border-bottom-width: 8px;
+   box-shadow: 0 0 8px darkcyan;
+   transition: 0.2s ease-in-out;
+   animation: bt 2s linear infinite ;
+   user-select: none;
+   text-shadow: 0 0 8px white;
+}
+
+#button:active{
+    border-width: 0px;
+    transform: translateY(2px);
+    background-color: limegreen;
+}
+
+@keyframes bt{
+    0%{
+        box-shadow: 2px 0 5px darkcyan;
+    }
+    25%{
+        box-shadow: 0 2px 5px darkcyan;
+    }
+    50%{
+        box-shadow: -2px 0 5px darkcyan;
+    }
+    75%{
+        box-shadow: 0 -2px 5px darkcyan;
+    }
+    100%{
+        box-shadow: 2px 0 5px darkcyan;
+    }
+}
+
+#button2{
+   position: absolute; 
+   left: 33%;
+   bottom: 38%;
+   height: 70px;
+   width: 150px;
+   border-radius: 40px;
+   border: solid;
+   background-color: darkgrey;
+   font-size: 23px;
+   color: white;
+   border-color: black;
+   border-bottom-width: 8px;
+   box-shadow: 0 0 8px gainsboro;
+   transition: 0.2s ease-in-out;
+   animation: bt2 2s linear infinite ;
+   user-select: none;
+   text-shadow: 0 0 8px white;
+}
+
+#button2:active{
+    border-width: 0px;
+    transform: translateY(2px);
+    background-color: white;
+    color: black;
+}
+
+@keyframes bt2{
+    0%{
+        box-shadow: 2px 0 5px gainsboro;
+    }
+    25%{
+        box-shadow: 0 2px 5px gainsboro;
+    }
+    50%{
+        box-shadow: -2px 0 5px gainsboro;
+    }
+    75%{
+        box-shadow: 0 -2px 5px gainsboro;
+    }
+    100%{
+        box-shadow: 2px 0 5px gainsboro;
+    }
+}
+
+#button3{
+    position: absolute; 
+   left: 33%;
+   bottom: 49%;
+   height: 70px;
+   width: 150px;
+   border-radius: 40px;
+   border: solid;
+   background-color: goldenrod;
+   font-size: 23px;
+   color: white;
+   border-color: black;
+   border-bottom-width: 8px;
+   box-shadow: 0 0 8px white;
+   transition: 0.2s ease-in-out;
+   animation: bt3 2s linear infinite ;
+   user-select: none;
+   text-shadow: 0 0 8px white;
+}
+
+#button3:active{
+    border-width: 0px;
+    transform: translateY(2px);
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+
+@keyframes bt3{
+    0%{
+        box-shadow: 2px 0 5px yellow;
+    }
+    25%{
+        box-shadow: 0 2px 5px yellow;
+    }
+    50%{
+        box-shadow: -2px 0 5px yellow;
+    }
+    75%{
+        box-shadow: 0 -2px 5px yellow;
+    }
+    100%{
+        box-shadow: 2px 0 5px yellow;
+    }
+}
+
+@keyframes buttonMove{
+    0%{
+        transform: scale(0);
+    }
+    25%{
+        transform: scale(0.4);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    75%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+#title{
+    position: absolute;
+    color: white;
+    left: 27%;
+    bottom: 68%;
+    text-shadow: 0 0 8px white;
+    user-select: none;
+}
+
+#boxCheck{
+    position: absolute;
+    left: 30%;
+    bottom: 55%;
+    accent-color: black;
+    box-shadow: 0 0 8px white;
+    z-index: 2;
+}
+
+#boxCheckA{
+    position: absolute;
+    left: 35%;
+    bottom: 52.5%;
+    text-shadow: 0 0 15px skyblue;
+}
+/*
+‼️‼️اجعل حجمه على حجم كامل الشاشة
+*/
+#sitting{
+    display: none;
+    position: absolute;
+    left: -20% ;
+    bottom: 7%;
+    background-image: url(BackGroundSitting.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 750px;
+    width: 550px;
+    z-index: 1;
+}
+
+#bsitting{
+    position: absolute; 
+   left: 33%;
+   bottom: 35%;
+   height: 70px;
+   width: 150px;
+   border-radius: 40px;
+   border: solid;
+   border-color: peru ;
+   background-color: peru ;
+   font-size: 23px;
+   color: white;
+   border-color: black;
+   border-bottom-width: 8px;
+   box-shadow: 0 0 8px yellow;
+   transition: 0.2s ease-in-out;
+   animation: bt3 2s linear infinite ;
+   user-select: none;
+   text-shadow: 0 0 8px white;
+   background-image: url(backS.png);
+   background-size: 120% 150%;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+#bsitting:active{
+    border-width: 0px;
+    transform: translateY(2px);
+    background-color: greenyellow;
+}
+
+@keyframes bt3{
+    0%{
+        box-shadow: 2px 0 5px yellow;
+    }
+    25%{
+        box-shadow: 0 2px 5px yellow;
+    }
+    50%{
+        box-shadow: -2px 0 5px yellow;
+    }
+    75%{
+        box-shadow: 0 -2px 5px yellow;
+    }
+    100%{
+        box-shadow: 2px 0 5px yellow;
+    }
+}
+
+#sitting-name{
+    display: none;
+    color: white;
+    position: absolute;
+    left: 35%;
+    bottom: 65%;
+    text-shadow: 0 0 8px white;
+    z-index: 2;
+    user-select: none;
+}
+
+#name{
+    position: absolute;
+    left: 10%;
+    bottom: 2%;
+    font-size: 22px;
+    color: white;
+    text-shadow: 0 0 8px white;
+    user-select: none;
+}
+
+#version{
+    position: absolute;
+    left: 73%;
+    bottom: 2%;
+    font-size: 22px;
+    color: white;
+    text-shadow: 0 0 8px white;
+    user-select: none;
+}
+
+#back{
+    display: none;
+   position: absolute; 
+   left: 5%;
+   bottom: 87%;
+   height: 70px;
+   width: 70px;
+   border-radius: 40px;
+   border: solid;
+   background-color: gray;
+   font-size: 23px;
+   color: white;
+   border-color: black;
+   border-bottom-width: 8px;
+   box-shadow: 0 0 8px darkgray;
+   transition: 0.2s ease-in-out;
+   animation: bk 2s linear infinite ;
+   user-select: none;
+   text-shadow: 0 0 8px white;
+}
+
+#back:active{
+    border-width: 0px;
+    transform: translateY(2px);
+    background-color: darkgray;
+}
+
+@keyframes bk{
+    0%{
+        box-shadow: 2px 0 5px white;
+    }
+    25%{
+        box-shadow: 0 2px 5px white;
+    }
+    50%{
+        box-shadow: -2px 0 5px white;
+    }
+    75%{
+        box-shadow: 0 -2px 5px white;
+    }
+    100%{
+        box-shadow: 2px 0 5px white;
+    }
+}
+
+#slid{
+    color: yellow;
+    position: absolute;
+    bottom: 50%;
+    left: 30%;
+    z-index: 2;
+}
+
+#exit{
+   display: none;
+   position: absolute; 
+   left: 5%;
+   bottom: 77%;
+   height: 50px;
+   width: 75px;
+   border-radius: 40px;
+   border: solid;
+   background-color: red ;
+   font-size: 23px;
+   color: white;
+   border-color: black;
+   border-bottom-width: 8px;
+   box-shadow: 0 0 8px brown;
+   transition: 0.3s ease-in-out;
+   animation: exins 0.3s linear forwards ;
+   user-select: none;
+   text-shadow: 0 0 8px white;
+}
+
+#exit:active{
+    border-width: 0px;
+    transform: translateY(2px);
+    background-color: sandybrown;
+}
+
+@keyframes exins{
+    0%{
+        transform: scale(0);
+        box-shadow: 2px 0 5px firebrick;
+    }
+    25%{
+        transform: scale(0.4);
+        box-shadow: 0 2px 5px firebrick;
+    }
+    50%{
+        transform: scale(0.8);
+        box-shadow: -2px 0 5px firebrick;
+    }
+    75%{
+        transform: scale(1.05);
+        box-shadow: 0 -2px 5px firebrick;
+    }
+    100%{
+        transform: scale(1);
+        box-shadow: 2px 0 5px firebrick;
+    }
+}
+/*انميشن بدون عنصر مثل button*/
+@keyframes exout{
+    0%{
+        transform: scale(1);
+        box-shadow: 2px 0 5px firebrick;
+    }
+    25%{
+        transform: scale(1.05);
+        box-shadow: 0 2px 5px firebrick;
+    }
+    50%{
+        transform: scale(0.8);
+        box-shadow: -2px 0 5px firebrick;
+    }
+    75%{
+        transform: scale(0.4);
+        box-shadow: 0 -2px 5px firebrick;
+    }
+    100%{
+        transform: scale(0);
+        box-shadow: 2px 0 5px firebrick;
+    }
+}
+
+#jump{
+    display: none;
+    position: absolute;
+    left: 75%;
+    bottom: 5%;
+    opacity: 0.7;
+    box-shadow: 0 0 8px brown;
+    background-image: url(jump.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 103%;
+    border: 2px solid;
+    border-color: brown;
+    height: 70px;
+    width: 70px;
+    border-radius: 60px;
+}
+
+#jump:active{
+    transform: translateY(2px);
+    box-shadow: 0 0 8px yellow;
+}
+
+#ninja{
+    display: none;
+    position: absolute;
+    left: 200px;
+    right: 200px;
+    bottom: -1%;
+    height: 100px;
+    width: 60px;
+    background-image: url(/ninja_images/s1.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.1s ease-in-out;
+}
+
+@keyframes NinjaJump{
+    from{
+        background-image: url(/ninja_images/j1.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    to{
+        background-image: url(/ninja_images/j3.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@keyframes NinjaMove{
+    0%{
+        background-image: url(/ninja_images/m1.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    50%{
+        background-image: url(/ninja_images/m2.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    100%{
+        background-image: url(/ninja_images/m3.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+#moveL{
+    display: none;
+    position: absolute; 
+   left: 25%;
+   opacity: 0.7;
+   bottom: 5%;
+   height: 50px;
+   width: 50px;
+   border-radius: 40px;
+   border: solid;
+   border-color: peru ;
+   background-image: url(MoveLeft.png);
+   background-size: 112%;
+   background-position: center;
+   background-repeat: no-repeat;
+   font-size: 23px;
+   color: white;
+   border-color: black;
+   border-bottom-width: 8px;
+   box-shadow: 0 0 8px yellow;
+   transition: 0.2s ease-in-out;
+   animation: Left1 2s linear infinite ;
+   user-select: none;
+   text-shadow: 0 0 8px white;
+}
+
+#moveL:active{
+    border-width: 0px;
+    transform: translateY(2px);
+}
+#moveR{
+   display: none;
+   position: absolute; 
+   left: 10%;
+   opacity: 0.7;
+   bottom: 5%;
+   height: 50px;
+   width: 50px;
+   border-radius: 40px;
+   border: solid;
+   border-color: peru ;
+   background-image: url(MoveRight.png);
+   background-size: 112%;
+   background-position: center;
+   background-repeat: no-repeat;
+   font-size: 23px;
+   color: white;
+   border-color: black;
+   border-bottom-width: 8px;
+   box-shadow: 0 0 8px yellow;
+   transition: 0.2s ease-in-out;
+   animation: Right1 2s linear infinite ;
+   user-select: none;
+   text-shadow: 0 0 8px white;
+}
+
+#moveR:active{
+    border-width: 0px;
+    transform: translateY(2px);
+}
+
+#translate{
+    position: absolute;
+    bottom: 37%;
+    left: 65%;
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: white;
+    background-color: tan;
+    box-shadow: 0 0 8px tan;
+    text-shadow: 0 0 15px white;
+    color: white;
+    transition: 0.2s ease-in-out;
+    border-color: black;
+    border-bottom-width: 8px;
+    height: 50px;
+    width: 50px;
+    user-select: none;
+}
+
+#translate:active{
+    transform: translateY(2px);
+    border-width: 0;
+}
+
+#shoot{
+    display: none;
+    position: absolute; 
+   left: 80%;
+   opacity: 0.7;
+   bottom: 15%;
+   height: 60px;
+   width: 60px;
+   border-radius: 40px;
+   border: solid;
+   background-image: url(shark-ninja.png);
+   background-size: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   font-size: 20px;
+   color: white;
+   border-color: black;
+   border-bottom-width: 8px;
+   box-shadow: 0 0 8px white;
+   transition: 0.2s ease-in-out;
+   animation: SH 2s linear infinite ;
+   user-select: none;
+   text-shadow: 0 0 8px white;
+}
+
+#shoot:active{
+    transform: translateY(2px);
+    border-width: 0;
+}
+
+@keyframes Shooter{
+    0%{
+        background-image: url(/ninja_images/Sh1.png);
+    }
+    50%{
+        background-image: url(/ninja_images/sh2.png);
+    }
+    100%{
+        background-image: url(/ninja_images/Sh1.png);
+    }
+}
+
+#story{
+    position: absolute;
+    bottom: 45%;
+    left: 65%;
+    border-radius: 20px;
+    border-color: black;
+    border-bottom-width: 8px;
+    background-color: lightblue;
+    text-shadow: 0 0 15px white;
+    color: white;
+    height: 50px;
+    width: 50px;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+    box-shadow: 0 0 8px skyblue;
+}
+
+#story:active{
+    border-width: 0px;
+    transform: translateY(2px);
+}
+
+#SNoteBook{
+    display: none;
+   position: absolute;
+   left: 15%;
+    bottom: 20%;
+    height: 600px;
+    width: 300px;
+    background-image: url(NoteBook.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+#BackStory{
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+    border: 2px solid;
+    border-color: black;
+    border-bottom-width: 8px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0 15px lightseagreen;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(BackStory.png);
+    z-index: 3;
+}
+
+#BackStory:active{
+    border-width: 0;
+    transform: translateY(2px);
+}
+
+#storytext{
+    position: absolute;
+    left: 20%;
+    color: black;
+    bottom: 45%;
+    width: 200px;
+    text-shadow: 0 0 8px black;
+}
+
+
+
+#About-Us{
+    position: absolute;
+    bottom: 37%;
+    left: 20%;
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: black;
+    border-bottom-width: 8px;
+    background-color: darkcyan;
+    box-shadow: 0 0 15px lightseagreen;
+    color: white;
+    text-shadow: 0 0 15px white;
+    height: 50px;
+    width: 50px;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+    z-index: -1;
+}
+
+#About-Us:active{
+    border-width: 0px;
+    transform: translateY(2px);
+}
+
+#UNoteBook{
+    display: none;
+    position: absolute;
+    left: 12%;
+    bottom: 20%;
+    height: 600px;
+    width: 300px;
+    background-image: url(NoteBook.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+#textAboutUs{
+    position: absolute;
+    left: 20%;
+    color: black;
+    bottom: 40%;
+    width: 200px;
+    text-shadow: 0 0 8px black;
+}
+
+#UBack{
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+    border: 2px solid;
+    border-color: black;
+    border-bottom-width: 8px;
+    box-shadow: 0 0 8px lightseagreen;
+    transition: 0.2s ease-in-out;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(BackStory.png);
+    z-index: 3;
+}
+
+#UBack:active{
+    border-width: 0;
+    transform: translateY(2px);
+}
+
+@keyframes MoveNinjaControl{
+    0%{
+        transform: scale(0);
+    }
+    25%{
+        transform: scale(0.4);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    75%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+/*
+صمم الواجهه وجملها اكثر
+*/
+/*
+صمم العالم والوحوش
+*/
+/*
+اكمل تصميم المتجر لاحقا
+*/
